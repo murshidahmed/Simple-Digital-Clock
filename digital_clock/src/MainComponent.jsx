@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import BgImage from './assets/wllpaper.jfif'
+import BgVideo from './assets/earth-bg.mp4';
 
 function MainComponent() {
 
@@ -32,11 +33,8 @@ function MainComponent() {
   
   return (
     <div className='container'>
-        <div className='bg'>
-            <div className='overlay'></div>
-            <h1>{formatTime()}</h1>
-        </div>
-        
+        <video className='bg' src={BgVideo} autoPlay loop muted></video>
+        <h1>{formatTime()}</h1>      
     </div>
   )
 }

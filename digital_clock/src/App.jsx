@@ -1,6 +1,5 @@
 import MainComponent from "./MainComponent"
 
-
 function App() {
 
   return (
